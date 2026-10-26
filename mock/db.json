@@ -1,0 +1,606 @@
+{
+  "orders": [
+    {
+      "id": "ORD-1001",
+      "customerId": "c6",
+      "customerName": "Hina Malik",
+      "date": "2026-10-05",
+      "amount": 1667,
+      "status": "pending",
+      "category": "Software"
+    },
+    {
+      "id": "ORD-1002",
+      "customerId": "c9",
+      "customerName": "Hassan Ali",
+      "date": "2026-10-04",
+      "amount": 1547,
+      "status": "pending",
+      "category": "Hardware"
+    },
+    {
+      "id": "ORD-1003",
+      "customerId": "c1",
+      "customerName": "Ali Raza",
+      "date": "2026-10-03",
+      "amount": 1826,
+      "status": "cancelled",
+      "category": "Software"
+    },
+    {
+      "id": "ORD-1004",
+      "customerId": "c4",
+      "customerName": "Ayesha Noor",
+      "date": "2026-10-03",
+      "amount": 2307,
+      "status": "cancelled",
+      "category": "Software"
+    },
+    {
+      "id": "ORD-1005",
+      "customerId": "c10",
+      "customerName": "Fatima Shah",
+      "date": "2026-10-04",
+      "amount": 964,
+      "status": "pending",
+      "category": "Accessories"
+    },
+    {
+      "id": "ORD-1006",
+      "customerId": "c1",
+      "customerName": "Ali Raza",
+      "date": "2026-10-08",
+      "amount": 240,
+      "status": "paid",
+      "category": "Services"
+    },
+    {
+      "id": "ORD-1007",
+      "customerId": "c7",
+      "customerName": "Zain Abbas",
+      "date": "2026-10-05",
+      "amount": 2264,
+      "status": "pending",
+      "category": "Services"
+    },
+    {
+      "id": "ORD-1008",
+      "customerId": "c9",
+      "customerName": "Hassan Ali",
+      "date": "2026-10-27",
+      "amount": 790,
+      "status": "pending",
+      "category": "Hardware"
+    },
+    {
+      "id": "ORD-1009",
+      "customerId": "c6",
+      "customerName": "Hina Malik",
+      "date": "2026-10-04",
+      "amount": 2293,
+      "status": "pending",
+      "category": "Software"
+    },
+    {
+      "id": "ORD-1010",
+      "customerId": "c10",
+      "customerName": "Fatima Shah",
+      "date": "2026-10-07",
+      "amount": 2083,
+      "status": "cancelled",
+      "category": "Services"
+    },
+    {
+      "id": "ORD-1011",
+      "customerId": "c8",
+      "customerName": "Maryam Iqbal",
+      "date": "2026-10-19",
+      "amount": 1906,
+      "status": "shipped",
+      "category": "Services"
+    },
+    {
+      "id": "ORD-1012",
+      "customerId": "c4",
+      "customerName": "Ayesha Noor",
+      "date": "2026-10-26",
+      "amount": 786,
+      "status": "paid",
+      "category": "Software"
+    },
+    {
+      "id": "ORD-1013",
+      "customerId": "c10",
+      "customerName": "Fatima Shah",
+      "date": "2026-10-10",
+      "amount": 2201,
+      "status": "cancelled",
+      "category": "Services"
+    },
+    {
+      "id": "ORD-1014",
+      "customerId": "c8",
+      "customerName": "Maryam Iqbal",
+      "date": "2026-10-10",
+      "amount": 349,
+      "status": "pending",
+      "category": "Accessories"
+    },
+    {
+      "id": "ORD-1015",
+      "customerId": "c3",
+      "customerName": "Usman Tariq",
+      "date": "2026-10-25",
+      "amount": 1451,
+      "status": "paid",
+      "category": "Accessories"
+    },
+    {
+      "id": "ORD-1016",
+      "customerId": "c7",
+      "customerName": "Zain Abbas",
+      "date": "2026-10-02",
+      "amount": 367,
+      "status": "shipped",
+      "category": "Services"
+    },
+    {
+      "id": "ORD-1017",
+      "customerId": "c6",
+      "customerName": "Hina Malik",
+      "date": "2026-10-20",
+      "amount": 2084,
+      "status": "cancelled",
+      "category": "Software"
+    },
+    {
+      "id": "ORD-1018",
+      "customerId": "c2",
+      "customerName": "Sara Khan",
+      "date": "2026-10-09",
+      "amount": 1991,
+      "status": "pending",
+      "category": "Software"
+    },
+    {
+      "id": "ORD-1019",
+      "customerId": "c5",
+      "customerName": "Bilal Ahmed",
+      "date": "2026-10-21",
+      "amount": 2417,
+      "status": "cancelled",
+      "category": "Services"
+    },
+    {
+      "id": "ORD-1020",
+      "customerId": "c7",
+      "customerName": "Zain Abbas",
+      "date": "2026-10-22",
+      "amount": 1471,
+      "status": "pending",
+      "category": "Accessories"
+    },
+    {
+      "id": "ORD-1021",
+      "customerId": "c6",
+      "customerName": "Hina Malik",
+      "date": "2026-10-06",
+      "amount": 529,
+      "status": "cancelled",
+      "category": "Software"
+    },
+    {
+      "id": "ORD-1022",
+      "customerId": "c4",
+      "customerName": "Ayesha Noor",
+      "date": "2026-10-25",
+      "amount": 1227,
+      "status": "paid",
+      "category": "Hardware"
+    },
+    {
+      "id": "ORD-1023",
+      "customerId": "c7",
+      "customerName": "Zain Abbas",
+      "date": "2026-10-13",
+      "amount": 2083,
+      "status": "pending",
+      "category": "Hardware"
+    },
+    {
+      "id": "ORD-1024",
+      "customerId": "c8",
+      "customerName": "Maryam Iqbal",
+      "date": "2026-10-13",
+      "amount": 2300,
+      "status": "shipped",
+      "category": "Hardware"
+    },
+    {
+      "id": "ORD-1025",
+      "customerId": "c7",
+      "customerName": "Zain Abbas",
+      "date": "2026-10-28",
+      "amount": 2303,
+      "status": "shipped",
+      "category": "Accessories"
+    },
+    {
+      "id": "ORD-1026",
+      "customerId": "c6",
+      "customerName": "Hina Malik",
+      "date": "2026-10-22",
+      "amount": 1608,
+      "status": "paid",
+      "category": "Hardware"
+    },
+    {
+      "id": "ORD-1027",
+      "customerId": "c2",
+      "customerName": "Sara Khan",
+      "date": "2026-10-06",
+      "amount": 669,
+      "status": "paid",
+      "category": "Hardware"
+    },
+    {
+      "id": "ORD-1028",
+      "customerId": "c1",
+      "customerName": "Ali Raza",
+      "date": "2026-10-16",
+      "amount": 2463,
+      "status": "paid",
+      "category": "Services"
+    },
+    {
+      "id": "ORD-1029",
+      "customerId": "c5",
+      "customerName": "Bilal Ahmed",
+      "date": "2026-10-01",
+      "amount": 646,
+      "status": "cancelled",
+      "category": "Services"
+    },
+    {
+      "id": "ORD-1030",
+      "customerId": "c10",
+      "customerName": "Fatima Shah",
+      "date": "2026-10-19",
+      "amount": 1355,
+      "status": "paid",
+      "category": "Software"
+    },
+    {
+      "id": "ORD-1031",
+      "customerId": "c8",
+      "customerName": "Maryam Iqbal",
+      "date": "2026-10-28",
+      "amount": 2340,
+      "status": "cancelled",
+      "category": "Accessories"
+    },
+    {
+      "id": "ORD-1032",
+      "customerId": "c7",
+      "customerName": "Zain Abbas",
+      "date": "2026-10-13",
+      "amount": 474,
+      "status": "cancelled",
+      "category": "Accessories"
+    },
+    {
+      "id": "ORD-1033",
+      "customerId": "c1",
+      "customerName": "Ali Raza",
+      "date": "2026-10-07",
+      "amount": 325,
+      "status": "paid",
+      "category": "Accessories"
+    },
+    {
+      "id": "ORD-1034",
+      "customerId": "c3",
+      "customerName": "Usman Tariq",
+      "date": "2026-10-04",
+      "amount": 1442,
+      "status": "pending",
+      "category": "Software"
+    },
+    {
+      "id": "ORD-1035",
+      "customerId": "c1",
+      "customerName": "Ali Raza",
+      "date": "2026-10-19",
+      "amount": 669,
+      "status": "pending",
+      "category": "Services"
+    },
+    {
+      "id": "ORD-1036",
+      "customerId": "c10",
+      "customerName": "Fatima Shah",
+      "date": "2026-10-01",
+      "amount": 338,
+      "status": "paid",
+      "category": "Accessories"
+    },
+    {
+      "id": "ORD-1037",
+      "customerId": "c3",
+      "customerName": "Usman Tariq",
+      "date": "2026-10-21",
+      "amount": 1083,
+      "status": "shipped",
+      "category": "Services"
+    },
+    {
+      "id": "ORD-1038",
+      "customerId": "c8",
+      "customerName": "Maryam Iqbal",
+      "date": "2026-10-04",
+      "amount": 522,
+      "status": "cancelled",
+      "category": "Accessories"
+    },
+    {
+      "id": "ORD-1039",
+      "customerId": "c8",
+      "customerName": "Maryam Iqbal",
+      "date": "2026-10-16",
+      "amount": 1327,
+      "status": "pending",
+      "category": "Hardware"
+    },
+    {
+      "id": "ORD-1040",
+      "customerId": "c2",
+      "customerName": "Sara Khan",
+      "date": "2026-10-24",
+      "amount": 1453,
+      "status": "shipped",
+      "category": "Accessories"
+    },
+    {
+      "id": "ORD-1041",
+      "customerId": "c3",
+      "customerName": "Usman Tariq",
+      "date": "2026-10-17",
+      "amount": 144,
+      "status": "paid",
+      "category": "Services"
+    },
+    {
+      "id": "ORD-1042",
+      "customerId": "c3",
+      "customerName": "Usman Tariq",
+      "date": "2026-10-23",
+      "amount": 2274,
+      "status": "pending",
+      "category": "Services"
+    },
+    {
+      "id": "ORD-1043",
+      "customerId": "c2",
+      "customerName": "Sara Khan",
+      "date": "2026-10-23",
+      "amount": 1119,
+      "status": "shipped",
+      "category": "Hardware"
+    },
+    {
+      "id": "ORD-1044",
+      "customerId": "c6",
+      "customerName": "Hina Malik",
+      "date": "2026-10-25",
+      "amount": 962,
+      "status": "shipped",
+      "category": "Hardware"
+    },
+    {
+      "id": "ORD-1045",
+      "customerId": "c10",
+      "customerName": "Fatima Shah",
+      "date": "2026-10-26",
+      "amount": 849,
+      "status": "paid",
+      "category": "Accessories"
+    },
+    {
+      "id": "ORD-1046",
+      "customerId": "c4",
+      "customerName": "Ayesha Noor",
+      "date": "2026-10-07",
+      "amount": 2170,
+      "status": "cancelled",
+      "category": "Services"
+    },
+    {
+      "id": "ORD-1047",
+      "customerId": "c1",
+      "customerName": "Ali Raza",
+      "date": "2026-10-01",
+      "amount": 1194,
+      "status": "cancelled",
+      "category": "Services"
+    },
+    {
+      "id": "ORD-1048",
+      "customerId": "c4",
+      "customerName": "Ayesha Noor",
+      "date": "2026-10-23",
+      "amount": 1460,
+      "status": "cancelled",
+      "category": "Services"
+    },
+    {
+      "id": "ORD-1049",
+      "customerId": "c6",
+      "customerName": "Hina Malik",
+      "date": "2026-10-03",
+      "amount": 953,
+      "status": "pending",
+      "category": "Hardware"
+    },
+    {
+      "id": "ORD-1050",
+      "customerId": "c8",
+      "customerName": "Maryam Iqbal",
+      "date": "2026-10-07",
+      "amount": 1433,
+      "status": "paid",
+      "category": "Accessories"
+    },
+    {
+      "id": "ORD-1051",
+      "customerId": "c10",
+      "customerName": "Fatima Shah",
+      "date": "2026-10-20",
+      "amount": 57,
+      "status": "cancelled",
+      "category": "Services"
+    },
+    {
+      "id": "ORD-1052",
+      "customerId": "c2",
+      "customerName": "Sara Khan",
+      "date": "2026-10-27",
+      "amount": 541,
+      "status": "cancelled",
+      "category": "Hardware"
+    },
+    {
+      "id": "ORD-1053",
+      "customerId": "c8",
+      "customerName": "Maryam Iqbal",
+      "date": "2026-10-06",
+      "amount": 1827,
+      "status": "shipped",
+      "category": "Software"
+    },
+    {
+      "id": "ORD-1054",
+      "customerId": "c7",
+      "customerName": "Zain Abbas",
+      "date": "2026-10-15",
+      "amount": 1694,
+      "status": "pending",
+      "category": "Hardware"
+    },
+    {
+      "id": "ORD-1055",
+      "customerId": "c3",
+      "customerName": "Usman Tariq",
+      "date": "2026-10-05",
+      "amount": 162,
+      "status": "paid",
+      "category": "Accessories"
+    },
+    {
+      "id": "ORD-1056",
+      "customerId": "c3",
+      "customerName": "Usman Tariq",
+      "date": "2026-10-20",
+      "amount": 2490,
+      "status": "cancelled",
+      "category": "Services"
+    },
+    {
+      "id": "ORD-1057",
+      "customerId": "c3",
+      "customerName": "Usman Tariq",
+      "date": "2026-10-18",
+      "amount": 2295,
+      "status": "paid",
+      "category": "Software"
+    },
+    {
+      "id": "ORD-1058",
+      "customerId": "c1",
+      "customerName": "Ali Raza",
+      "date": "2026-10-26",
+      "amount": 470,
+      "status": "paid",
+      "category": "Accessories"
+    },
+    {
+      "id": "ORD-1059",
+      "customerId": "c4",
+      "customerName": "Ayesha Noor",
+      "date": "2026-10-27",
+      "amount": 914,
+      "status": "pending",
+      "category": "Services"
+    },
+    {
+      "id": "ORD-1060",
+      "customerId": "c4",
+      "customerName": "Ayesha Noor",
+      "date": "2026-10-10",
+      "amount": 2102,
+      "status": "paid",
+      "category": "Services"
+    }
+  ],
+  "customers": [
+    {
+      "id": "c1",
+      "name": "Ali Raza",
+      "email": "ali.raza@example.com",
+      "joinedAt": "2026-01-10"
+    },
+    {
+      "id": "c2",
+      "name": "Sara Khan",
+      "email": "sara.khan@example.com",
+      "joinedAt": "2026-02-11"
+    },
+    {
+      "id": "c3",
+      "name": "Usman Tariq",
+      "email": "usman.tariq@example.com",
+      "joinedAt": "2026-03-12"
+    },
+    {
+      "id": "c4",
+      "name": "Ayesha Noor",
+      "email": "ayesha.noor@example.com",
+      "joinedAt": "2026-04-13"
+    },
+    {
+      "id": "c5",
+      "name": "Bilal Ahmed",
+      "email": "bilal.ahmed@example.com",
+      "joinedAt": "2026-05-14"
+    },
+    {
+      "id": "c6",
+      "name": "Hina Malik",
+      "email": "hina.malik@example.com",
+      "joinedAt": "2026-06-15"
+    },
+    {
+      "id": "c7",
+      "name": "Zain Abbas",
+      "email": "zain.abbas@example.com",
+      "joinedAt": "2026-07-16"
+    },
+    {
+      "id": "c8",
+      "name": "Maryam Iqbal",
+      "email": "maryam.iqbal@example.com",
+      "joinedAt": "2026-08-17"
+    },
+    {
+      "id": "c9",
+      "name": "Hassan Ali",
+      "email": "hassan.ali@example.com",
+      "joinedAt": "2026-09-18"
+    },
+    {
+      "id": "c10",
+      "name": "Fatima Shah",
+      "email": "fatima.shah@example.com",
+      "joinedAt": "2026-01-10"
+    }
+  ]
+}
