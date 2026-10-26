@@ -16,3 +16,8 @@ export interface Customer {
   email: string;
   joinedAt: string;
 }
+
+export interface User {
+  name: string;
+  email: string;
+}
