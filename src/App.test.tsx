@@ -5,6 +5,15 @@ import { renderApp } from './test/utils';
 
 beforeEach(() => {
   localStorage.clear();
+  // The dashboard loads data, so give every test an empty fake API.
+  vi.stubGlobal(
+    'fetch',
+    vi.fn(() => Promise.resolve(new Response('[]', { status: 200 }))),
+  );
+});
+
+afterEach(() => {
+  vi.unstubAllGlobals();
 });
 
 async function fillAndSubmit(email: string, password: string) {
