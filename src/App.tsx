@@ -3,6 +3,7 @@ import AppLayout from './components/AppLayout';
 import ProtectedRoute from './components/ProtectedRoute';
 import DashboardPage from './pages/DashboardPage';
 import LoginPage from './pages/LoginPage';
+import OrdersPage from './pages/OrdersPage';
 import PlaceholderPage from './pages/PlaceholderPage';
 
 export default function App() {
@@ -13,7 +14,7 @@ export default function App() {
       <Route element={<ProtectedRoute />}>
         <Route element={<AppLayout />}>
           <Route index element={<DashboardPage />} />
-          <Route path="orders" element={<PlaceholderPage title="Orders" note="The orders table arrives in Step 4." />} />
+          <Route path="orders" element={<OrdersPage />} />
           <Route path="customers" element={<PlaceholderPage title="Customers" note="Customer pages arrive in Step 5." />} />
         </Route>
       </Route>

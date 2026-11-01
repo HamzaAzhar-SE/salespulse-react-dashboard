@@ -18,3 +18,13 @@ export function formatShortDate(isoDate: string): string {
     timeZone: 'UTC',
   });
 }
+
+/** "2026-10-12" -> "Oct 12, 2026" (UTC, so the day never shifts with the time zone). */
+export function formatLongDate(isoDate: string): string {
+  return new Date(`${isoDate}T00:00:00Z`).toLocaleDateString('en-US', {
+    month: 'short',
+    day: 'numeric',
+    year: 'numeric',
+    timeZone: 'UTC',
+  });
+}
