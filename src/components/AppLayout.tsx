@@ -1,3 +1,4 @@
+import { Suspense } from 'react';
 import { NavLink, Outlet } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import ThemeToggle from './ThemeToggle';
@@ -66,7 +67,15 @@ export default function AppLayout() {
       </header>
 
       <main id="main-content" tabIndex={-1} className="mx-auto max-w-6xl px-4 py-8 focus:outline-none">
-        <Outlet />
+        <Suspense
+          fallback={
+            <div role="status" className="py-16 text-center text-slate-500 dark:text-slate-400">
+              Loading page...
+            </div>
+          }
+        >
+          <Outlet />
+        </Suspense>
       </main>
     </div>
   );
