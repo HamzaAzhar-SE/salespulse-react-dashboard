@@ -14,6 +14,7 @@ beforeEach(() => {
 
 afterEach(() => {
   vi.unstubAllGlobals();
+  document.documentElement.classList.remove('dark');
 });
 
 async function fillAndSubmit(email: string, password: string) {
@@ -67,5 +68,48 @@ describe('login form', () => {
     await screen.findByRole('heading', { name: 'Dashboard' });
     await user.click(screen.getByRole('button', { name: /log out/i }));
     expect(await screen.findByText('Sign in to your account')).toBeInTheDocument();
+  });
+});
+
+describe('app layout', () => {
+  function logIn() {
+    localStorage.setItem(
+      'salespulse.user',
+      JSON.stringify({ name: DEMO_USER.name, email: DEMO_USER.email }),
+    );
+  }
+
+  it('opens the Customers page from the navigation', async () => {
+    logIn();
+    renderApp('/');
+    const user = userEvent.setup();
+    await user.click(await screen.findByRole('link', { name: 'Customers' }));
+    expect(await screen.findByRole('heading', { name: 'Customers', level: 1 })).toBeInTheDocument();
+  });
+
+  it('shows "Customer not found" for an unknown customer URL', async () => {
+    logIn();
+    renderApp('/customers/c99');
+    expect(await screen.findByRole('heading', { name: 'Customer not found' })).toBeInTheDocument();
+  });
+
+  it('marks the current page in the navigation', async () => {
+    logIn();
+    renderApp('/orders');
+    expect(await screen.findByRole('link', { name: 'Orders' })).toHaveAttribute('aria-current', 'page');
+  });
+
+  it('has a skip link that moves focus to the main content', async () => {
+    logIn();
+    renderApp('/');
+    await userEvent.setup().click(await screen.findByRole('link', { name: 'Skip to main content' }));
+    expect(screen.getByRole('main')).toHaveFocus();
+  });
+
+  it('switches to dark mode from the header', async () => {
+    logIn();
+    renderApp('/');
+    await userEvent.setup().click(await screen.findByRole('button', { name: 'Dark mode' }));
+    expect(document.documentElement.classList.contains('dark')).toBe(true);
   });
 });

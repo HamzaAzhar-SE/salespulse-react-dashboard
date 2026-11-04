@@ -2,6 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --tooltip-bg: #ffffff;
+  --tooltip-fg: #0f172a;
+  --tooltip-border: #e2e8f0;
+}
+
+.dark {
+  --tooltip-bg: #1e293b;
+  --tooltip-fg: #f1f5f9;
+  --tooltip-border: #475569;
+}
+
 body {
   @apply bg-slate-50 text-slate-900 antialiased dark:bg-slate-900 dark:text-slate-100;
+}
+
+/* One clear focus ring for keyboard users, everywhere. */
+:focus-visible {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-pulse {
+    animation: none;
+  }
 }

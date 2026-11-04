@@ -18,5 +18,5 @@ npm run build
 - [x] Step 2: login page and protected routes (demo login: admin@salespulse.com / Admin@123)
 - [x] Step 3: dashboard (KPIs and charts)
 - [x] Step 4: orders table
-- [ ] Step 5: customers pages, dark mode, polish
+- [x] Step 5: customers pages, dark mode, polish
 - [ ] Step 6: tests, README screenshots, deploy

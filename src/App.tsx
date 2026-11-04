@@ -1,10 +1,11 @@
 import { Navigate, Route, Routes } from 'react-router-dom';
 import AppLayout from './components/AppLayout';
 import ProtectedRoute from './components/ProtectedRoute';
+import CustomerDetailPage from './pages/CustomerDetailPage';
+import CustomersPage from './pages/CustomersPage';
 import DashboardPage from './pages/DashboardPage';
 import LoginPage from './pages/LoginPage';
 import OrdersPage from './pages/OrdersPage';
-import PlaceholderPage from './pages/PlaceholderPage';
 
 export default function App() {
   return (
@@ -15,7 +16,8 @@ export default function App() {
         <Route element={<AppLayout />}>
           <Route index element={<DashboardPage />} />
           <Route path="orders" element={<OrdersPage />} />
-          <Route path="customers" element={<PlaceholderPage title="Customers" note="Customer pages arrive in Step 5." />} />
+          <Route path="customers" element={<CustomersPage />} />
+          <Route path="customers/:customerId" element={<CustomerDetailPage />} />
         </Route>
       </Route>
 
