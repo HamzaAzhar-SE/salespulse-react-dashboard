@@ -4,3 +4,5 @@ dist
 .env.local
 *.log
 .DS_Store
+# Made from mock/db.json during "npm run build"
+public/data

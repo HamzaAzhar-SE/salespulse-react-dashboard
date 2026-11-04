@@ -1,11 +1,14 @@
+import { lazy } from 'react';
 import { Navigate, Route, Routes } from 'react-router-dom';
 import AppLayout from './components/AppLayout';
 import ProtectedRoute from './components/ProtectedRoute';
-import CustomerDetailPage from './pages/CustomerDetailPage';
-import CustomersPage from './pages/CustomersPage';
-import DashboardPage from './pages/DashboardPage';
 import LoginPage from './pages/LoginPage';
-import OrdersPage from './pages/OrdersPage';
+
+// Each page loads only when it is opened. The chart library is big, so this keeps the first load fast.
+const DashboardPage = lazy(() => import('./pages/DashboardPage'));
+const OrdersPage = lazy(() => import('./pages/OrdersPage'));
+const CustomersPage = lazy(() => import('./pages/CustomersPage'));
+const CustomerDetailPage = lazy(() => import('./pages/CustomerDetailPage'));
 
 export default function App() {
   return (
